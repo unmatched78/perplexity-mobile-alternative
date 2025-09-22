@@ -105,12 +105,18 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Container(
-              color: Colors.amber,
-              height: 50,
-              child: const Text('You have pushed the button this many times:',
-              style: TextStyle(color:Colors.blue),
-              ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              verticalDirection: VerticalDirection.down,
+              children: [
+                Container(
+                  color: Colors.amber,
+                  height: 50,
+                  child: const Text('You have pushed the button this many times:',
+                  style: TextStyle(color:Colors.blue),
+                  ),
+                ),
+              ],
             ),
             Text(
               '$_counter',
