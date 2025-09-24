@@ -7,3 +7,4 @@ databases
 aiosqlite
 pytest
 tortoise-orm
+pymysql
