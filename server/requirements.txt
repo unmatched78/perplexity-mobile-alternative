@@ -1,0 +1,9 @@
+fastapi
+requests
+uvicorn
+pydantic
+sqlalchemy
+databases
+aiosqlite
+pytest
+tortoise-orm
