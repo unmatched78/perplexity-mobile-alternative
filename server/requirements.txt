@@ -1,6 +1,11 @@
 fastapi
+uvicorn 
+python-dotenv
+tavily-python
+trafilatura
 pydantic
-uvicorn
+pydantic-settings
 google-generativeai
 sentence-transformers
 pytorch
+numpy
