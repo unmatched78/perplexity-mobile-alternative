@@ -6,6 +6,7 @@ class Sidebar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool iscollapsed = false;
     return Container(
 
       width:64,
