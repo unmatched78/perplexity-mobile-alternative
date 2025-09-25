@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flut/theme/colors.dart';
+import 'package:flut/widgets/sidebar_button.dart';
 class Sidebar extends StatefulWidget {
   const Sidebar({super.key});
 
@@ -24,7 +25,12 @@ class _SidebarState extends State<Sidebar> {
           const SizedBox(height:16,),
           Icon(Icons.add, color: AppColors.whiteColor, size:32,),
           const SizedBox(height:24,),
-          
+
+          SidebarButton(
+            isCollapsed: isCollapsed,
+            icon: Icons.home,
+            text: Text("Home"),
+          ),
           
           Container(
             margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
