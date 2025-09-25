@@ -33,6 +33,13 @@ class SearchSection extends StatelessWidget {
             "Search for articles, tutorials, and more...",
             hintStyle: TextStyle(color:AppColors.textGrey,
             fontSize:16,),
+            border:InputBorder.none,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                
+              ],
+            )
           ),)
         )
       ],
