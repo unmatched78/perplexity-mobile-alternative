@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flut/theme/colors.dart';
-class Sidebar extends StatelessWidget {
+class Sidebar extends StatefulWidget {
   const Sidebar({super.key});
 
+  @override
+  State<Sidebar> createState() => _SidebarState();
+}
 
+class _SidebarState extends State<Sidebar> {
   @override
   Widget build(BuildContext context) {
     bool iscollapsed = false;
