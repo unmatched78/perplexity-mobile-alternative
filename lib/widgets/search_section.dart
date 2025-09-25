@@ -45,6 +45,7 @@ class SearchSection extends StatelessWidget {
                 SearchBarButtoon(),
                 const SizedBox(width: 12,),  
                 SearchBarButtoon(),
+                const Spacer(),
               ],
             ),
         )
