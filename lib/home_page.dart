@@ -1,3 +1,4 @@
+import 'package:flut/services/chat_web_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flut/widgets/sidebar.dart';
 import 'package:flut/theme/colors.dart';
@@ -10,6 +11,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    super.initState();
+    ChatWebService().connect();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
