@@ -5,7 +5,7 @@ class SidebarButton extends StatelessWidget
 {
   final isCollapsed = true;
   final IconData icon;
-  final Text text;
+  final String text;
   const SidebarButton({
     super.key,
     required this.isCollapsed,
