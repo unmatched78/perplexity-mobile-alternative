@@ -25,12 +25,19 @@ class _SidebarState extends State<Sidebar> {
           Icon(Icons.add, color: AppColors.whiteColor, size:32,),
           
           Row(
+            mainAxisAlignment: isCollapsed ? MainAxisAlignment.center: MainAxisAlignment.start,
             children: [
               Container(
                 margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
                 child: Icon(Icons.search, color: AppColors.whiteColor, size:32,)),
             ],
-            Text(isCollapsed),
+            isCollapsed ? const SizedBox()
+            Text("Home",
+            style:TextStyle(
+              fontSize:18,
+              fontWeight:FontWeight.bold,
+
+            )),
           ),
           Container(
             margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
