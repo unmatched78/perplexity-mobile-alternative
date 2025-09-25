@@ -31,6 +31,28 @@ class _SidebarState extends State<Sidebar> {
             icon: Icons.add,
             text: "Add",
           ),
+          SidebarButton(
+            isCollapsed: isCollapsed,
+            icon: Icons.language,
+            text: "Language",
+          ),
+          SidebarButton(
+            isCollapsed: isCollapsed,
+            icon: Icons.auto_awesome,
+            text: "Auto",
+          ),
+          SidebarButton(
+            isCollapsed: isCollapsed,
+            icon: Icons.cloud_outlined,
+            text: "Cloud",
+
+          ),
+          SidebarButton(
+            isCollapsed: isCollapsed,
+            icon: Icons.home,
+            text: "Home",
+          ),
+          
           
           Container(
             margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
