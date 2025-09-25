@@ -14,8 +14,13 @@ class Sidebar extends StatelessWidget {
         children: [
           const SizedBox(height:16,),
           Icon(Icons.auto_awesome_mosaic, color: AppColors.whiteColor, size:32,),
+          const SizedBox(height:16,),
           Icon(Icons.add, color: AppColors.whiteColor, size:32,),
-          Icon(Icons.search, color: AppColors.whiteColor, size:32,),
+          
+          Container(
+            margin: EdgeInsets.symmetric(vertical:14),
+            child: Icon(Icons.search, color: AppColors.whiteColor, size:32,)),
+
         ],
       ),
     );
