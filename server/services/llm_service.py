@@ -32,3 +32,4 @@ class LLMService:
 
         for chunk in response:
             yield chunk.text
+            
