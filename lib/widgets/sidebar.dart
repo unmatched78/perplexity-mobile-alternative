@@ -10,6 +10,11 @@ class Sidebar extends StatelessWidget {
 
       width:64,
       color: AppColors.sideNav,
+      child: Column(
+        children: [
+          Icon(Icons.auto_awesome_mosaic, color: Colors.white,),      
+        ],
+      ),
     );
   }
 }
