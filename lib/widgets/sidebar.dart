@@ -13,7 +13,7 @@ class _SidebarState extends State<Sidebar> {
     bool isCollapsed = true;
     return Container(
 
-      width:64,
+      width: isCollapsed ? 64: 128,
       color: AppColors.sideNav,
       child: Column(
         children: [
