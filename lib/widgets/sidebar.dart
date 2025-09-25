@@ -33,9 +33,16 @@ class Sidebar extends StatelessWidget {
             margin: EdgeInsets.symmetric(vertical:14),
             child: Icon(Icons.cloud_outlined, color: AppColors.whiteColor, size:32,)),
             const Spacer(),
-          Container(
+            GestureDetector(
+              onTap: (){
+                setState((context) {
+                  
+                });
+              },
+           
+          child: Container(
             margin: EdgeInsets.symmetric(vertical:14),
-            child: Icon(Icons.keyboard_arrow_right, color: AppColors.whiteColor, size:32,)),
+            child: Icon(Icons.keyboard_arrow_right, color: AppColors.whiteColor, size:32,)), )
 
         ],
       ),
