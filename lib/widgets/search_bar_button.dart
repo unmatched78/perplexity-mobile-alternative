@@ -17,6 +17,12 @@ class _SearchBarButtoonState extends State<SearchBarButtoon> {
         color: Colors.transparent,
         borderRadius: BorderRadius.circular(8),
       ),
+      child:Row(
+        children: [
+          Icon(Icons.search, color:AppColors.textGrey, size:32,),
+        ],
+      )
+
     )
   }
 }
