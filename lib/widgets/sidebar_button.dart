@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flut/theme/colors.dart';
-class SidebarButton extends StatelessWidget {
-  const SidebarButton({super.key});
+class SidebarButton extends StatelessWidget 
+
+{
+  final isCollapsed = true;
+  final IconData icon;
+  final Text text;
+  const SidebarButton({
+    super.key,
+    required this.isCollapsed,
+    required this.icon,
+    required this.text,
+
+  });
 
   @override
   Widget build(BuildContext context) {
-    final isCollapsed = true;
-    final IconData icon;
-    final Text text;
     
+
 
 
     return Row(
