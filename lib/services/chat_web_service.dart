@@ -1,8 +1,7 @@
 import 'dart:convert';
-
-import 'package:web_socket_client/web_socket_client.dart';
+import 'package:web_socket_Client/web_socket_client.dart';
 class ChatWebService {
-
+  WebSocket? _socket;
   void connect() {
     // Connect to chat service
     _socket =WebSocket(Uri.parse("ws://localhost:8000/ws/chat"));
@@ -14,5 +13,6 @@ class ChatWebService {
   }
   void chat() {
     // Chat functionality
+    _socket?.add(json.encode({"message": "Hello, World!"}));
   }
 }
