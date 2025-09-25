@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         scaffoldBackgroundColor: AppColors:AppColors.background,
+        textTheme: GoogleFonts.interTextTheme(),
       ),
 
       home: const HomePage(),
