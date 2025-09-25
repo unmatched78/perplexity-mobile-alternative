@@ -12,7 +12,27 @@ class SearchSection extends StatelessWidget {
       children: [
         Text(
           "Where knowledge meets innovation",
-          style: GoogleFonts.ibmPlexMono(),
+          style: GoogleFonts.ibmPlexMono(
+            fontStyle: FontStyle.italic,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1.5,
+          ),
+
+        ),
+        const SizedBox(height: 16,),
+        Container(
+          width: 700,
+          decoration: BoxDecoration(
+            color: AppColors.searchBar,
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child:
+          TextField(decoration:InputDecoration(
+            hintText: 
+            "Search for articles, tutorials, and more...",
+            hintStyle: TextStyle(color:AppColors.textGrey),
+          ),)
         )
       ],
     );
