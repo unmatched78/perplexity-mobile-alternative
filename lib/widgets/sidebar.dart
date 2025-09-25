@@ -47,9 +47,12 @@ class _SidebarState extends State<Sidebar> {
                 });
               },
            
-          child: Container(
+          child: AnimatedContainer(
+            duration: Duration(milliseconds:300),
             margin: EdgeInsets.symmetric(vertical:14),
-            child: Icon(Icons.keyboard_arrow_right, color: AppColors.whiteColor, size:32,)), )
+            child: Icon(
+              isCollapsed ? Icons.keyboard_arrow_right:
+              Icons.keyboard_arrow_left, color: AppColors.whiteColor, size:32,)), )
 
         ],
       ),
