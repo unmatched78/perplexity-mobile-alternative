@@ -8,7 +8,7 @@ class ChatWebService {
     _socket =WebSocket(Uri.parse("ws://localhost:8000/ws/chat"));
     _socket!.messages.listen((message) {
       // Handle incoming messages
-      final data =json.encode(message);
+      final data =json.decode(message);
       print("Received message: $data"); 
     });
   }
