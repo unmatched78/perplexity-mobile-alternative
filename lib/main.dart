@@ -22,22 +22,8 @@ class name extends StatelessWidget {
         body: const Center(
           child: Text('Hello, World!'),
           ),
-          Container(
-            margin: const EdgeInsets.only(top: 20),
-            padding: const EdgeInsets.all(16),
-            color: Colors.tealAccent,
-            child: const Text(
-              'This is a Container widget!',
-              style: TextStyle(fontSize: 18, color: Colors.black),
-            ),
-          ),
-          navigationBar: NavigationBar(
-            destinations: [
-              NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-              NavigationDestination(icon: Icon(Icons.business), label: 'Business'),
-              NavigationDestination(icon: Icon(Icons.school), label: 'School'),
-            ],
-        ),
+          
+          
     ));
   }
 }
