@@ -17,26 +17,32 @@ class _SidebarState extends State<Sidebar> {
       width: isCollapsed ? 64: 128,
       color: AppColors.sideNav,
       child: Column(
+        crossAxisAlignment: isCollapsed ? CrossAxisAlignment.center: CrossAxisAlignment.start,
         children: [
           const SizedBox(height:16,),
           Icon(Icons.auto_awesome_mosaic, color: AppColors.whiteColor, size:32,),
           const SizedBox(height:16,),
           Icon(Icons.add, color: AppColors.whiteColor, size:32,),
           
+          Row(
+            children: [
+              Container(
+                margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
+                child: Icon(Icons.search, color: AppColors.whiteColor, size:32,)),
+            ],
+            Text(isCollapsed)
+          ),
           Container(
-            margin: EdgeInsets.symmetric(vertical:14),
-            child: Icon(Icons.search, color: AppColors.whiteColor, size:32,)),
-          Container(
-            margin: EdgeInsets.symmetric(vertical:14),
+            margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
             child: Icon(Icons.add, color: AppColors.whiteColor, size:32,)),
           Container(
-            margin: EdgeInsets.symmetric(vertical:14),
+            margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
             child: Icon(Icons.language, color: AppColors.whiteColor, size:32,)),
           Container(
-            margin: EdgeInsets.symmetric(vertical:14),
+            margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
             child: Icon(Icons.auto_awesome, color: AppColors.whiteColor, size:32,)),
           Container(
-            margin: EdgeInsets.symmetric(vertical:14),
+            margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
             child: Icon(Icons.cloud_outlined, color: AppColors.whiteColor, size:32,)),
             const Spacer(),
             GestureDetector(
@@ -49,7 +55,7 @@ class _SidebarState extends State<Sidebar> {
            
           child: AnimatedContainer(
             duration: Duration(milliseconds:300),
-            margin: EdgeInsets.symmetric(vertical:14),
+            margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
             child: Icon(
               isCollapsed ? Icons.keyboard_arrow_right:
               Icons.keyboard_arrow_left, color: AppColors.whiteColor, size:32,)), )
