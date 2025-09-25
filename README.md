@@ -1,2 +1,2 @@
 #Perplexity Alternative free forever 
-Build with Flutter 
+Build with Flutter and Fastapi 
