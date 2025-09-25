@@ -29,7 +29,7 @@ class _SidebarState extends State<Sidebar> {
           SidebarButton(
             isCollapsed: isCollapsed,
             icon: Icons.add,
-            text: Text("Home"),
+            text: "Add",
           ),
           
           Container(
