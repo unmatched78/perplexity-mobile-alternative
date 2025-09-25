@@ -12,6 +12,11 @@ class SearchBarButtoon extends StatefulWidget {
 class _SearchBarButtoonState extends State<SearchBarButtoon> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(8),
+      ),
+    )
   }
 }
