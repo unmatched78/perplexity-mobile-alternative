@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flut/theme/colors.dart';
-
+import 'package:flut/'
 
 class SearchBarButtoon extends StatefulWidget {
   const SearchBarButtoon({super.key});
@@ -20,7 +20,13 @@ class _SearchBarButtoonState extends State<SearchBarButtoon> {
       child:Row(
         children: [
           Icon(Icons.search, color:AppColors.textGrey, size:32,),
+          Text("Focus",
+           style:TextStyle(
+            color:AppColors.textGrey,
+            fontSize:16,
+          ),)
         ],
+
       )
 
     )
