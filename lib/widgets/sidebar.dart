@@ -30,14 +30,14 @@ class _SidebarState extends State<Sidebar> {
               Container(
                 margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
                 child: Icon(Icons.search, color: AppColors.whiteColor, size:32,)),
-            ],
-            isCollapsed ? const SizedBox()
+           
+            isCollapsed ? const SizedBox():
             Text("Home",
             style:TextStyle(
               fontSize:18,
               fontWeight:FontWeight.bold,
 
-            )),
+            )), ],
           ),
           Container(
             margin: EdgeInsets.symmetric(vertical:14, horizontal:10),
