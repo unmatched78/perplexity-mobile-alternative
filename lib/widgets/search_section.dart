@@ -7,6 +7,7 @@ class SearchSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           "Where knowledge meets innovation",
