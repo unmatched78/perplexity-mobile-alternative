@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flut/theme/colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SearchSection extends StatelessWidget {
   const SearchSection({super.key});
@@ -11,11 +12,7 @@ class SearchSection extends StatelessWidget {
       children: [
         Text(
           "Where knowledge meets innovation",
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            color: AppColors.whiteColor,
-          ),
+          style: GoogleFonts.ibmPlexMono(),
         )
       ],
     );
