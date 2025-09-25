@@ -37,7 +37,7 @@ class SearchSection extends StatelessWidget {
             fontSize:16,),
             border:InputBorder.none,
             Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+             
               children: [
                 SearchBarButtoon()
               ],
