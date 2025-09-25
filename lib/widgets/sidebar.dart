@@ -40,7 +40,8 @@ class _SidebarState extends State<Sidebar> {
             const Spacer(),
             GestureDetector(
               onTap: (){
-                setState((context) {
+                setState(() {
+                  isCollapsed=!isCollapsed;
                   
                 });
               },
