@@ -20,6 +20,12 @@ class Sidebar extends StatelessWidget {
           Container(
             margin: EdgeInsets.symmetric(vertical:14),
             child: Icon(Icons.search, color: AppColors.whiteColor, size:32,)),
+          Container(
+            margin: EdgeInsets.symmetric(vertical:14),
+            child: Icon(Icons.add, color: AppColors.whiteColor, size:32,)),
+          Container(
+            margin: EdgeInsets.symmetric(vertical:14),
+            child: Icon(Icons.language, color: AppColors.whiteColor, size:32,)),
 
         ],
       ),
