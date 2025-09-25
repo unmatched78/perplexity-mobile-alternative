@@ -15,6 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: AppColors:AppColors.background,
         textTheme: GoogleFonts.interTextTheme(),
+        ThemeData.dark().textTheme,
+        
       ),
 
       home: const HomePage(),
