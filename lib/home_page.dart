@@ -11,7 +11,8 @@ class HomePage extends StatelessWidget {
       body:Row(children: [
         Sidebar(),
         Column(children: [
-          
+          Expanded(child: SearchSection(),),
+          Container(color:AppColors.background, width:600, height:400,)
         ],),
       ],)
     )
