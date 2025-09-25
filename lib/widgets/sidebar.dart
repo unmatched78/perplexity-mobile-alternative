@@ -10,7 +10,7 @@ class Sidebar extends StatefulWidget {
 class _SidebarState extends State<Sidebar> {
   @override
   Widget build(BuildContext context) {
-    bool iscollapsed = false;
+    bool isCollapsed = true;
     return Container(
 
       width:64,
