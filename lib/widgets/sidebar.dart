@@ -28,7 +28,7 @@ class _SidebarState extends State<Sidebar> {
 
           SidebarButton(
             isCollapsed: isCollapsed,
-            icon: Icons.home,
+            icon: Icons.add,
             text: Text("Home"),
           ),
           
