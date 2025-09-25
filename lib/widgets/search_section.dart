@@ -31,7 +31,8 @@ class SearchSection extends StatelessWidget {
           TextField(decoration:InputDecoration(
             hintText: 
             "Search for articles, tutorials, and more...",
-            hintStyle: TextStyle(color:AppColors.textGrey),
+            hintStyle: TextStyle(color:AppColors.textGrey,
+            fontSize:16,),
           ),)
         )
       ],
