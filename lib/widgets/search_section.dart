@@ -6,6 +6,17 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+        Text(
+          "Where knowledge meets innovation",
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: AppColors.whiteColor,
+          ),
+        )
+      ],
+    );
   }
 }
