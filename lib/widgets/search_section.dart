@@ -36,13 +36,15 @@ class SearchSection extends StatelessWidget {
             hintStyle: TextStyle(color:AppColors.textGrey,
             fontSize:16,),
             border:InputBorder.none,
-            Row(
+            
+          ),
+          ),
+          Row(
              
               children: [
-                SearchBarButtoon()
+                SearchBarButtoon(),
               ],
-            )
-          ),)
+            ),
         )
       ],
     );
