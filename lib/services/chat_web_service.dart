@@ -11,7 +11,7 @@ class ChatWebService {
       print("Received message: $data"); 
     });
   }
-  void chat() {
+  void chat(String query) {
     // Chat functionality
     _socket?.add(json.encode({"message": "Hello, World!"}));
   }
