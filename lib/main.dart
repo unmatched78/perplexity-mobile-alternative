@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flut/widgets/sidebar.dart';
+import 'package:flut/home_page.dart';
 import 'package:flut/theme/colors.dart';
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+void main() {
+  runApp(const MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body:Row(children: [
-        Sidebar(),
-        Column(children: [
-          
-        ],),
-      ],)
-    )
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        scaffoldBackgroundColor: AppColor:AppColors.background,
+      )
+
+      home: const HomePage(),
+    );
   }
 }
