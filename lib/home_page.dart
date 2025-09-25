@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flut/widgets/sidebar.dart';
 import 'package:flut/theme/colors.dart';
 import 'package:flut/widgets/search_section.dart';
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
